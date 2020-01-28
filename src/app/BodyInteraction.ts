@@ -40,7 +40,6 @@ export default class BodyInteraction {
         if (this.body)
             this.body.style.transform = this.headRotation + ' ' + this.headScaleX;
 
-
         if (this.leg)
             this.leg.style.transform = this.headRotation + ' ' + this.headScaleX;
     }

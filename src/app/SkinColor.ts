@@ -10,7 +10,7 @@ export default class SkinColor {
     }
 
     private _createMouseEvents() {
-        let colors = document.getElementsByClassName('skincolor');
+        let colors = document.getElementsByClassName('swatches__color');
 
         for (let i = 0; i < colors.length; i++) {
             const skin = colors[i];
@@ -26,20 +26,4 @@ export default class SkinColor {
             skin.style.fill = e.target.dataset.color;
         }
     }
-    //     if (this.head) {
-    //         if (e.pageX <= this.head.getBoundingClientRect().left) {
-    //             if (!this.headFlipped) {
-    //                 this.headScaleX = 'scaleX(-1)';
-    //                 this.headFlipped = true;
-    //             }
-    //         }
-
-    //         if (e.pageX >= this.head.getBoundingClientRect().right) {
-    //             if (this.headFlipped) {
-    //                 this.headScaleX = 'scaleX(1)';
-    //                 this.headFlipped = false;
-    //             }
-    //         }
-    //     }
-    // }
 }

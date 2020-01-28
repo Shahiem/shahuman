@@ -85,7 +85,7 @@ body {
     padding-bottom: 20px;
 }
 
-.skincolor {
+.swatches__color {
     cursor: pointer;
     border-radius: 10px;
     width: 50px;
@@ -94,15 +94,15 @@ body {
     margin-right: 10px;
 }
 
-.skincolor--blue {
+.swatches__color--blue {
     background-color: rgb(53, 11, 240);
 }
 
-.skincolor--red {
+.swatches__color--red {
     background-color: rgb(238, 74, 74);
 }
 
-.skincolor--purple {
+.swatches__color--purple {
     background-color: rgb(136, 114, 236);
 }
 
