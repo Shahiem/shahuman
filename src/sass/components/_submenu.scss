@@ -1,0 +1,20 @@
+.submenu {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    left: 160px;
+    top: 200px;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+}
+
+.submenu__title {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: rgb(168, 216, 255);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

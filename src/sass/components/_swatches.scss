@@ -1,0 +1,20 @@
+.swatches__color {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.swatches__color--blue {
+    background-color: rgb(53, 11, 240);
+}
+
+.swatches__color--red {
+    background-color: rgb(238, 74, 74);
+}
+
+.swatches__color--purple {
+    background-color: rgb(136, 114, 236);
+}
