@@ -29,5 +29,4 @@ npm run build
 
 ## Credits
 (assets) Stubborn Illustrations Generator by:
-
-[](https://dribbble.com/shots/6664459--Freebie-Stubborn-Illustrations-Generator)
+https://dribbble.com/shots/6664459--Freebie-Stubborn-Illustrations-Generator
