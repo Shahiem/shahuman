@@ -1,4 +1,5 @@
 import { SVG } from '@svgdotjs/svg.js';
+import SVGCreator from './SVGCreator';
 
 export default class Head {
     headElement: any;
@@ -8,15 +9,16 @@ export default class Head {
             .addTo('.human')
             .attr({
                 id: 'head', class: 'head'
-            });
+            })
+            .viewbox('0 0 137.15 192.34');
 
-        this.headElement.viewbox('0 0 137.15 192.34');
 
-        this._addHead1();
+        //Heads
+        this.headOne();
     }
 
-    private _addHead1() {
-        this._createSVG([
+    private headOne() {
+        SVGCreator.createSVG(this.headElement, [
             {
                 path: 'M66.86,14.51A18,18,0,1,1,45.73.34,18,18,0,0,1,66.86,14.51',
                 fill: '#2437a8',
@@ -80,42 +82,5 @@ export default class Head {
                 translate: [-27, 0]
             },
         ]);
-    }
-
-    private _createSVG(options: any) {
-        for (let i = 0; i < options.length; i++) {
-            const element = options[i];
-
-            let part = this.headElement.path(element.path);
-
-            if (element.fill) {
-                part.fill({ color: element.fill, rule: 'evenodd' });
-            }
-
-            if (element.translate) {
-                part.transform({
-                    translate: element.translate
-                });
-            }
-
-            // Stroke
-            if (element.stroke) {
-                part.attr('stroke', element.stroke);
-            }
-
-            if (element.strokeWidth) {
-                part.attr('stroke-width', element.strokeWidth);
-            }
-
-            // Isolation
-            if (element.isolation) {
-                part.attr('isolation', element.isolation);
-            }
-
-            // Opacity◊
-            if (element.opacity) {
-                part.attr('opacity', element.opacity);
-            }
-        }
     }
 }
