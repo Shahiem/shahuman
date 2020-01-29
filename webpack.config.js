@@ -66,15 +66,9 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: require('html-webpack-template'),
+            template: './src/html/demo.html',
+            filename: 'index.html',
             inject: false,
-            title: process.env.APP_TITLE,
-            appMountId: 'app',
-        }),
-
-        new HtmlWebpackPlugin({  // Also generate a demo.html
-            filename: 'demo.html',
-            template: 'src/html/demo.html'
         }),
 
         new MiniCssExtractPlugin({
@@ -82,6 +76,5 @@ const config = {
         }),
     ],
 };
-
 
 module.exports = config;
