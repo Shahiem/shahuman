@@ -1,5 +1,4 @@
 export default class BodyInteraction {
-
     circle: HTMLElement | null;
 
     body: HTMLElement | null;

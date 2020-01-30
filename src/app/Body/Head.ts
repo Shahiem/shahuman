@@ -1,5 +1,5 @@
 import { SVG } from '@svgdotjs/svg.js';
-import SVGCreator from './SVGCreator';
+import SVGCreator from '../SVGCreator';
 
 export default class Head {
     headElement: any;
@@ -11,7 +11,6 @@ export default class Head {
                 id: 'head', class: 'head'
             })
             .viewbox('0 0 137.15 192.34');
-
 
         //Heads
         this.headOne();
@@ -27,6 +26,7 @@ export default class Head {
             {
                 path: 'M109,192l-.85-29.31s35.62,2.83,43.24-1.13c0,0,9.32-48-1.79-74.56l-.23-1L74.15,77.16,69.43,119.7c-2.53-7.47-22.92-15.34-28.38-4.64-11.84,23.18,30.49,38.78,30.49,38.78l-4.3,38.51',
                 fill: '#e576c6',
+                class: 'human__skincolor',
                 translate: [-27, 0]
             },
             {

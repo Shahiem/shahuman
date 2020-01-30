@@ -68,7 +68,6 @@ const config = {
         new HtmlWebpackPlugin({
             template: './src/html/demo.html',
             filename: 'index.html',
-            inject: false,
         }),
 
         new MiniCssExtractPlugin({
