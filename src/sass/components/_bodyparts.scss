@@ -1,18 +1,21 @@
+.human {
+    margin-top: -50px;
+    width: 50%;
+    margin-left: 90px;
+}
+
 .head {
-    width: 40%;
-    margin-left: 110px;
-    margin-top: -100px;
-    transform-origin: center;
+    transform-origin: center bottom;
     transition: 100ms linear all;
 }
 
 .body {
-    width: 56%;
-    margin-left: 61px;
-    margin-top: -7px;
+    width: 130%;
+    margin-left: -41px;
+    margin-top: -22px;
     position: relative;
-    z-index: -3;
-    transform-origin: center;
+    z-index: 10;
+    transform-origin: center top;
     transition: 100ms linear all;
 }
 

@@ -47,32 +47,28 @@ export default class BodyInteraction {
         if (this.head) {
             if (e.screenY >= window.screen.height / 2) {
                 if (!this.headFlipped) {
-                    this.headRotation = 'rotate(17deg)';
                     if (this.body) {
-                        this.body.style.marginLeft = '-5px';
-                        this.body.style.marginTop = '-23px';
+                        this.body.style.marginLeft = '-40px';
                     }
+                    this.headRotation = 'rotate(17deg)';
                 } else {
                     if (this.body) {
-                        this.body.style.marginLeft = '162px';
-                        this.body.style.marginTop = '-25px';
+                        this.body.style.marginLeft = '-23px';
                     }
-
                     this.headRotation = 'rotate(-17deg)';
                 }
             } else {
                 if (this.headFlipped) {
                     if (this.body) {
-                        this.body.style.marginLeft = '27px';
-                        this.body.style.marginTop = '-12px';
+                        this.body.style.marginLeft = '-15px';
                     }
 
                     this.headRotation = 'rotate(17deg)';
                 } else {
                     if (this.body) {
-                        this.body.style.marginLeft = '127px';
-                        this.body.style.marginTop = '-15px';
+                        this.body.style.marginLeft = '-50px';
                     }
+                    
                     this.headRotation = 'rotate(-17deg)';
                 }
             }
