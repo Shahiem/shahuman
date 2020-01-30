@@ -13,12 +13,35 @@
         <h1 class="logo">Shahuman</h1>
 
         <div class="submenu submenu--left">
-            <h2 class="submenu__title">Choose your skin color</h2>
+            <div id="submenu__left" class="submenu__list">
+                <ul>
 
-            <div class="swatches">
-                <div class="swatches__color swatches__color--blue" data-color="#350bf0"></div>
-                <div class="swatches__color swatches__color--red" data-color="#ee4a4a"></div>
-                <div class="swatches__color swatches__color--purple" data-color="#8872ec"></div>
+                    <li><a href="#" class="submenu__listitem" data-id="head">Head</a></li>
+                    <li><a href="#" class="submenu__listitem" data-id="head">Body</a></li>
+                    <li><a href="#" class="submenu__listitem" data-id="head">Legs</a></li>
+                    <li><a href="#" class="submenu__listitem" data-id="colors">
+                            <span class="swatches__color swatches__color--small swatches__color--blue"></span> Colors
+                            <i class="submenu_arrow"></i></a>
+                    </li>
+                    <li><a href="#" class="submenu__listitem" data-id="gender">Boy <i class="submenu_arrow"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="submenu__tab" data-id="gender">
+                <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+
+            </div>
+
+            <div class="submenu__tab" data-id="colors">
+                <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+
+                <h2 class="submenu__title">Choose your skin color</h2>
+
+                <div class="swatches">
+                    <div class="swatches__color swatches__color--blue" data-color="#350bf0"></div>
+                    <div class="swatches__color swatches__color--red" data-color="#ee4a4a"></div>
+                    <div class="swatches__color swatches__color--purple" data-color="#8872ec"></div>
+                </div>
             </div>
         </div>
 
@@ -27,4 +50,5 @@
         </div>
 
     </body>
+
 </html>

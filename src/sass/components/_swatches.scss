@@ -5,6 +5,15 @@
     height: 50px;
     display: inline-block;
     margin-right: 10px;
+    border: 1px solid transparent;
+}
+
+.swatches__color--small {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    float: left;
+    border-radius: 5px;
 }
 
 .swatches__color--blue {
@@ -17,4 +26,13 @@
 
 .swatches__color--purple {
     background-color: rgb(136, 114, 236);
+}
+
+.swatches__color:hover {
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.75);
+}
+
+.submenu__back {
+    font-size: 40px;
+    color: #aaa;
 }
