@@ -19,6 +19,13 @@
     padding-bottom: 20px;
 }
 
+.submenu__seperator {
+    border: 1px solid  rgb(247, 247, 247);
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+}
+
 .submenu__tab {
     display: none;
 }
