@@ -7,7 +7,7 @@ export default class Submenu {
         this._createMouseEvents();
     }
 
-    public _createMouseEvents() {
+    private _createMouseEvents() {
         let listItem = document.querySelectorAll('.submenu__list li a');
         let submenuBack = document.querySelectorAll('.submenu__back');
 
@@ -19,7 +19,6 @@ export default class Submenu {
             submenuBack[i].addEventListener('click', this._closeTab.bind(this, submenuBack[i]));
         }
     }
-
 
     private _closeTab(item: any) {
         if (!item)

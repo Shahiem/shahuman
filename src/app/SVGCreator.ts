@@ -30,5 +30,4 @@ export default class SVGCreator {
                 part.attr('class', element.class);
         }
     }
-
 }

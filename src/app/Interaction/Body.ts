@@ -32,7 +32,6 @@ export default class BodyInteraction {
     }
 
     private _moveBodyParts(e: any) {
-
         this._flipHead(e);
         this._rotateHead(e);
 
