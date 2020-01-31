@@ -1,10 +1,12 @@
 export default class BodyInteraction {
     circle: HTMLElement | null;
 
-    body: HTMLElement | null;
-    leg: HTMLElement | null;
+    body: any;
+    leg: any;
 
-    head: HTMLElement | null;
+    lastHead: any;
+    head: any;
+    headMoved: boolean;
     headFlipped: boolean;
     headRotation: string;
     headScaleX: string;
@@ -12,15 +14,15 @@ export default class BodyInteraction {
     constructor() {
         this.circle = document.getElementById('circle');
 
-        // Head
-        this.head = document.getElementById('head');
         this.headFlipped = false;
         this.headScaleX = '';
         this.headRotation = '';
+        this.headMoved = false;
 
-        // Body
+        this.head = document.getElementById('head');
         this.body = document.getElementById('body');
         this.leg = document.getElementById('leg');
+        this.lastHead = this.head;
 
         this._createMouseEvents();
     }
@@ -30,6 +32,7 @@ export default class BodyInteraction {
     }
 
     private _moveBodyParts(e: any) {
+
         this._flipHead(e);
         this._rotateHead(e);
 
@@ -50,11 +53,13 @@ export default class BodyInteraction {
                     if (this.body) {
                         this.body.style.marginLeft = '-40px';
                     }
+
                     this.headRotation = 'rotate(17deg)';
                 } else {
                     if (this.body) {
                         this.body.style.marginLeft = '-23px';
                     }
+
                     this.headRotation = 'rotate(-17deg)';
                 }
             } else {
@@ -68,9 +73,10 @@ export default class BodyInteraction {
                     if (this.body) {
                         this.body.style.marginLeft = '-50px';
                     }
-                    
+
                     this.headRotation = 'rotate(-17deg)';
                 }
+
             }
         }
     }

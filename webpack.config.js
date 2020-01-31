@@ -3,6 +3,7 @@ require('dotenv').config();
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
     entry: './src/index.ts',
@@ -30,12 +31,13 @@ const config = {
             },
             {
                 test: /\.(jpg|png|gif)$/,
+                
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 1000, // if less than 10 kb, add base64 encoded image to css
-                            name: "assets/images/[hash].[ext]" // if more than 10 kb move to this folder in build using file-loader
+                                limit: 8192
+                            // name: "assets/images/[hash].[ext]" ,// if more than 10 kb move to this folder in build using file-loader
                         },
                     }
                 ]
@@ -76,4 +78,14 @@ const config = {
     ],
 };
 
-module.exports = config;
+module.exports = (env, options) => {
+    let production = options.mode === "production";
+    config.devtool = production ? false : "eval-sourcemap";
+
+    if (production)
+        config.plugins = [
+            ...config.plugins,
+            new CopyWebpackPlugin([{ from: "./src/assets", to: "./assets" }])
+        ];
+    return config;
+};

@@ -11,10 +11,6 @@
 /* Helpers (optional) */
 @import './helpers/animations';
 
-// @import './helpers/functions';
-// @import './helpers/mixins';
-// @import './helpers/variables';
-
 body {
     background: rgb(231, 243, 255);
 }
@@ -32,6 +28,26 @@ body {
     z-index: 999;
 }
 
+.audio {
+    background: none;
+    border: 0;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    left: 160px;
+    background-image: url('../assets/images/audio_sound.png');
+
+}
+
+.audio--mute {
+    background-image: url('../assets/images/audio_mute.png');
+}
+
+
 .circle {
     background: #ffb5b5c9;
     width: 400px;
@@ -42,5 +58,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-

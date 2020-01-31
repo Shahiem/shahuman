@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@svgdotjs/svg.js": "^3.0.16",
+        "copy-webpack-plugin": "^5.1.1",
         "dotenv": "^8.2.0",
         "file-loader": "^5.0.2",
         "mini-css-extract-plugin": "^0.9.0"

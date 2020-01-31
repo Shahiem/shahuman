@@ -7,6 +7,8 @@ import Head from './app/Body/Head';
 import Body from './app/Body/Body';
 import Submenu from './app/Submenu';
 
+import Audio from './app/Audio';
+
 // Set the body parts first to render
 let headPart = new Head();
 let bodyPart = new Body();
@@ -15,3 +17,4 @@ let bodyInteract = new BodyInteraction();
 let skinColorInteract = new SkinColor();
 
 let Navigator = new Submenu();
+let Sound = new Audio();

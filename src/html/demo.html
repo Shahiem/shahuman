@@ -10,51 +10,68 @@
     </head>
 
     <body>
-        <h1 class="logo">Shahuman</h1>
+        <audio autoplay="true">
+            <source src="../dist/assets/audio/elevator.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
-        <div class="submenu submenu--left">
-            <div id="submenu__left" class="submenu__list">
-                <ul>
-                    <li><a href="#" class="submenu__listitem" data-id="head">Head <i class="submenu_arrow"></i></a></li>
-                    <li><a href="#" class="submenu__listitem" data-id="body">Body <i class="submenu_arrow"></i></a></li>
-                    <li><a href="#" class="submenu__listitem" data-id=";legs">Legs <i class="submenu_arrow"></i></a></li>
+        <main>
+            <header>
+                <h1 class="logo">Shahuman</h1>
 
-                    <li><span class="submenu__seperator"></span></li>
-                    <li><a href="#" class="submenu__listitem" data-id="colors">
-                            <span class="swatches__color swatches__color--small swatches__color--blue"></span> Colors
-                            <i class="submenu_arrow"></i></a>
-                    </li>
-                    <li><a href="#" class="submenu__listitem" data-id="gender">Boy <i class="submenu_arrow"></i></a></li>
-                </ul>
-            </div>
+                <span id="audio" class="audio"></span>
+            </header>
 
-            <div class="submenu__tab" data-id="head">
-                <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+            <nav>
+                <div class="submenu submenu--left">
+                    <div id="submenu__left" class="submenu__list">
+                        <ul>
+                            <li><a href="#" class="submenu__listitem" data-id="head">Head <i class="submenu_arrow"></i></a></li>
+                            <li><a href="#" class="submenu__listitem" data-id="body">Body <i class="submenu_arrow"></i></a></li>
+                            <li><a href="#" class="submenu__listitem" data-id=";legs">Legs <i class="submenu_arrow"></i></a></li>
 
-                <div class="heads"></div>
-            </div>
+                            <li><span class="submenu__seperator"></span></li>
+                            <li><a href="#" class="submenu__listitem" data-id="colors">
+                                    <span class="swatches__color swatches__color--small swatches__color--blue"></span> Colors
+                                    <i class="submenu_arrow"></i></a>
+                            </li>
+                            <li><a href="#" class="submenu__listitem" data-id="gender">Boy <i class="submenu_arrow"></i></a></li>
+                        </ul>
+                    </div>
 
-            <div class="submenu__tab" data-id="gender">
-                <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
-            </div>
+                    <div class="submenu__tab" data-id="head">
+                        <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
 
-            <div class="submenu__tab" data-id="colors">
-                <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+                        <div class="heads">
+                        </div>
+                    </div>
 
-                <h2 class="submenu__title">Choose your skin color</h2>
+                    <div class="submenu__tab" data-id="gender">
+                        <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+                    </div>
 
-                <div class="swatches">
-                    <div class="swatches__color swatches__color--blue" data-color="#350bf0"></div>
-                    <div class="swatches__color swatches__color--red" data-color="#ee4a4a"></div>
-                    <div class="swatches__color swatches__color--purple" data-color="#8872ec"></div>
+                    <div class="submenu__tab" data-id="colors">
+                        <span class="submenu__back"><i class="submenu_arrow submenu_arrow--left"></i></span>
+
+                        <h2 class="submenu__title">Choose your skin color</h2>
+
+                        <div class="swatches">
+                            <div class="swatches__color swatches__color--blue" data-color="#350bf0"></div>
+                            <div class="swatches__color swatches__color--red" data-color="#ee4a4a"></div>
+                            <div class="swatches__color swatches__color--purple" data-color="#8872ec"></div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <div id="circle" class="circle">
-            <div class="human"></div>
-        </div>
-
+            </nav>
+            <section>
+                <div id="circle" class="circle">
+                    <div class="human">
+                        <div class="human_head"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 
 </html>
