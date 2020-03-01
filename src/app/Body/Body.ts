@@ -2,7 +2,7 @@ import { SVG } from '@svgdotjs/svg.js';
 import SVGCreator from '../SVGCreator';
 
 export default class Body {
-    bodyElement: any;
+    bodyElement: SVGCreator;
 
     constructor() {
         this.bodyElement = SVG()

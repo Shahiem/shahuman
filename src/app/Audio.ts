@@ -1,10 +1,10 @@
 export default class Audio {
-    audio: any;
-    audioSource: any;
+    audio: HTMLElement;
+    audioSource: HTMLAudioElement;
 
     constructor() {
-        this.audioSource = document.getElementsByTagName('audio')[0];
-        this.audio = document.getElementById('audio');
+        this.audioSource = document.getElementsByTagName('audio')[0] as HTMLAudioElement;
+        this.audio = document.getElementById('audio') as HTMLElement; 
 
         this._createMouseEvents();
     }

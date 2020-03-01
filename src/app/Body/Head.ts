@@ -2,9 +2,7 @@ import { SVG } from '@svgdotjs/svg.js';
 import SVGCreator from '../SVGCreator';
 
 export default class Head {
-    headElement: any;
-    headsElement: any;
-    heassdElement: any;
+    headElement: SVGCreator;
 
     constructor() {
         this.headElement = SVG()
