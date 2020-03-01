@@ -1,29 +1,29 @@
 export default class SkinColor {
 
-    skinColor: any;
+  skinColor: any;
 
-    constructor() {
-        this.skinColor = document.getElementsByClassName('human__skincolor');
+  constructor() {
+    this.skinColor = document.getElementsByClassName('human__skincolor');
 
-        // Head
-        this._createMouseEvents();
+    // Head
+    this._createMouseEvents();
+  }
+
+  private _createMouseEvents() {
+    let colors: HTMLCollection = document.getElementsByClassName('swatches__color');
+
+    for (let i = 0; i < colors.length; i++) {
+      const skin = colors[i];
+
+      skin.addEventListener('click', this._switchSkinColor.bind(this));
     }
+  }
 
-    private _createMouseEvents() {
-        let colors = document.getElementsByClassName('swatches__color');
+  private _switchSkinColor(e: any) {
+    for (let i = 0; i < this.skinColor.length; i++) {
+      let skin = this.skinColor[i];
 
-        for (let i = 0; i < colors.length; i++) {
-            const skin = colors[i];
-
-            skin.addEventListener('click', this._switchSkinColor.bind(this));
-        }
+      skin.style.fill = e.target.dataset.color;
     }
-
-    private _switchSkinColor(e: any) {
-        for (let i = 0; i < this.skinColor.length; i++) {
-            let skin = this.skinColor[i];
-
-            skin.style.fill = e.target.dataset.color;
-        }
-    }
+  }
 }

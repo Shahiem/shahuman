@@ -2,6 +2,9 @@
 
 Create your ideal character made with JavaScript.
 
+## Demo 
+https://shahiem.github.io/shahuman/dist/
+
 ## Building and running on localhost
 
 ### Install node modules
