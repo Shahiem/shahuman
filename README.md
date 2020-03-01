@@ -16,7 +16,7 @@ npm install
 To create a development build:
 
 ```sh
-npm run start
+npm run watch
 ```
 
 ### Production
